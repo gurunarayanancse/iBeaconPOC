@@ -21,7 +21,6 @@ class BeaconDetector : NSObject, CLLocationManagerDelegate{
         guard let uuid = UUID(uuidString: "B0702880-A295-A8AB-F734-031A98A512DE") else { return }
         let constraint = CLBeaconIdentityConstraint(uuid: uuid)
         let beaconRegion = CLBeaconRegion(beaconIdentityConstraint: constraint, identifier: "com.beacon.myroom")
-        beaconRegion.notifyOnExit = true
         locationManager.startMonitoring(for: beaconRegion)
         locationManager.startRangingBeacons(satisfying: constraint)
     }
