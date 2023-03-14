@@ -8,21 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		1A4680ED29B61FB9005029F5 /* mistPOCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4680EC29B61FB9005029F5 /* mistPOCApp.swift */; };
-		1A4680EF29B61FB9005029F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4680EE29B61FB9005029F5 /* ContentView.swift */; };
+		1A4680EF29B61FB9005029F5 /* iBeaconListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4680EE29B61FB9005029F5 /* iBeaconListView.swift */; };
 		1A4680F129B61FB9005029F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A4680F029B61FB9005029F5 /* Assets.xcassets */; };
 		1A4680F429B61FB9005029F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A4680F329B61FB9005029F5 /* Preview Assets.xcassets */; };
 		1A46810029B62181005029F5 /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4680FF29B62181005029F5 /* NotificationHandler.swift */; };
 		1AB2CD7429B708470010F30F /* iBeacondiscoverer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB2CD7329B708470010F30F /* iBeacondiscoverer.swift */; };
+		1AB4B5A929C0B3790085D214 /* iBeaconInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB4B5A829C0B3790085D214 /* iBeaconInformationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1A4680E929B61FB9005029F5 /* mistPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mistPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A4680EC29B61FB9005029F5 /* mistPOCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mistPOCApp.swift; sourceTree = "<group>"; };
-		1A4680EE29B61FB9005029F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1A4680EE29B61FB9005029F5 /* iBeaconListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBeaconListView.swift; sourceTree = "<group>"; };
 		1A4680F029B61FB9005029F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A4680F329B61FB9005029F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1A4680FF29B62181005029F5 /* NotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
 		1AB2CD7329B708470010F30F /* iBeacondiscoverer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBeacondiscoverer.swift; sourceTree = "<group>"; };
+		1AB4B5A829C0B3790085D214 /* iBeaconInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBeaconInformationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +101,8 @@
 		1A4680FD29B61FE5005029F5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1A4680EE29B61FB9005029F5 /* ContentView.swift */,
+				1A4680EE29B61FB9005029F5 /* iBeaconListView.swift */,
+				1AB4B5A829C0B3790085D214 /* iBeaconInformationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -183,9 +186,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A4680EF29B61FB9005029F5 /* ContentView.swift in Sources */,
+				1A4680EF29B61FB9005029F5 /* iBeaconListView.swift in Sources */,
 				1A46810029B62181005029F5 /* NotificationHandler.swift in Sources */,
 				1A4680ED29B61FB9005029F5 /* mistPOCApp.swift in Sources */,
+				1AB4B5A929C0B3790085D214 /* iBeaconInformationView.swift in Sources */,
 				1AB2CD7429B708470010F30F /* iBeacondiscoverer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

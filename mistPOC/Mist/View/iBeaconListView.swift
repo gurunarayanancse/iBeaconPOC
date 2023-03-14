@@ -10,7 +10,11 @@ import SwiftUI
 struct HomeView: View {
     @ObservedObject var beaconDiscoverer = iBeaconDetector()
     var body: some View {
-        Text("Something")
+        List{
+            ForEach(beaconDiscoverer.availableBeacons,id: \.self) { beacon in
+                iBeaconInformationView(beacon: beacon)
+            }
+        }
     }
 }
 
