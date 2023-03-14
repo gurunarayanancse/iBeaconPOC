@@ -8,7 +8,7 @@
 import Foundation
 import CoreLocation
 
-class BeaconDetector : NSObject, CLLocationManagerDelegate{
+class iBeaconDetector : NSObject, CLLocationManagerDelegate{
     let locationManager = CLLocationManager()
     let notificationHandler = NotificationHandler()
     override init() {

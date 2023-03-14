@@ -12,7 +12,7 @@
 		1A4680F129B61FB9005029F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A4680F029B61FB9005029F5 /* Assets.xcassets */; };
 		1A4680F429B61FB9005029F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A4680F329B61FB9005029F5 /* Preview Assets.xcassets */; };
 		1A46810029B62181005029F5 /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4680FF29B62181005029F5 /* NotificationHandler.swift */; };
-		1AB2CD7429B708470010F30F /* Beacondiscoverer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB2CD7329B708470010F30F /* Beacondiscoverer.swift */; };
+		1AB2CD7429B708470010F30F /* iBeacondiscoverer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB2CD7329B708470010F30F /* iBeacondiscoverer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +22,7 @@
 		1A4680F029B61FB9005029F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A4680F329B61FB9005029F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1A4680FF29B62181005029F5 /* NotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
-		1AB2CD7329B708470010F30F /* Beacondiscoverer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beacondiscoverer.swift; sourceTree = "<group>"; };
+		1AB2CD7329B708470010F30F /* iBeacondiscoverer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBeacondiscoverer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				1A4680FF29B62181005029F5 /* NotificationHandler.swift */,
-				1AB2CD7329B708470010F30F /* Beacondiscoverer.swift */,
+				1AB2CD7329B708470010F30F /* iBeacondiscoverer.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -186,7 +186,7 @@
 				1A4680EF29B61FB9005029F5 /* ContentView.swift in Sources */,
 				1A46810029B62181005029F5 /* NotificationHandler.swift in Sources */,
 				1A4680ED29B61FB9005029F5 /* mistPOCApp.swift in Sources */,
-				1AB2CD7429B708470010F30F /* Beacondiscoverer.swift in Sources */,
+				1AB2CD7429B708470010F30F /* iBeacondiscoverer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

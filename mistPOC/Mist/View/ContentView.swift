@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    let beaconDiscoverer = BeaconDetector()
+    let beaconDiscoverer = iBeaconDetector()
     var body: some View {
         Text("Hello")
         .padding()
