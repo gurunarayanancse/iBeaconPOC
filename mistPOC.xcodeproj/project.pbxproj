@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A2942B329C22F6400CE8605 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2942B229C22F6400CE8605 /* HomeView.swift */; };
 		1A4680ED29B61FB9005029F5 /* mistPOCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4680EC29B61FB9005029F5 /* mistPOCApp.swift */; };
 		1A4680EF29B61FB9005029F5 /* iBeaconListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4680EE29B61FB9005029F5 /* iBeaconListView.swift */; };
 		1A4680F129B61FB9005029F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A4680F029B61FB9005029F5 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A2942B229C22F6400CE8605 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1A4680E929B61FB9005029F5 /* mistPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mistPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A4680EC29B61FB9005029F5 /* mistPOCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mistPOCApp.swift; sourceTree = "<group>"; };
 		1A4680EE29B61FB9005029F5 /* iBeaconListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBeaconListView.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			children = (
 				1A4680EE29B61FB9005029F5 /* iBeaconListView.swift */,
 				1AB4B5A829C0B3790085D214 /* iBeaconInformationView.swift */,
+				1A2942B229C22F6400CE8605 /* HomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				1A4680EF29B61FB9005029F5 /* iBeaconListView.swift in Sources */,
 				1A46810029B62181005029F5 /* NotificationHandler.swift in Sources */,
 				1A4680ED29B61FB9005029F5 /* mistPOCApp.swift in Sources */,
+				1A2942B329C22F6400CE8605 /* HomeView.swift in Sources */,
 				1AB4B5A929C0B3790085D214 /* iBeaconInformationView.swift in Sources */,
 				1AB2CD7429B708470010F30F /* iBeacondiscoverer.swift in Sources */,
 			);
