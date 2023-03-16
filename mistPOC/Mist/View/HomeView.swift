@@ -14,14 +14,14 @@ struct HomeView: View {
                 
                 // Ibeacon Navigation
                 NavigationLink {
-                    iBeaconListView().navigationTitle("Available iBeacon")
+                    iBeaconListView().navigationBarTitleDisplayMode(.inline).navigationTitle("Available iBeacon")
                 } label: {
                     Text("Scan iBeacons").frame(width: 220).padding(5).background(Color.purple)
                 }
                 
                 // Eddystone Beacon Navigation
                 NavigationLink {
-                    EddyStoneBeaconListView().navigationTitle("Availble Eddystone Beacons")
+                    EddyStoneBeaconListView().navigationBarTitleDisplayMode(.inline).navigationTitle("Availble Eddystone Beacons")
                 } label: {
                     Text("Scan EddyStone Beacons").frame(width: 220).padding(5).background(Color.blue)
                 }

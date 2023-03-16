@@ -10,15 +10,17 @@ import SwiftUI
 struct iBeaconListView: View {
     @ObservedObject var beaconDiscoverer = iBeaconDetector()
     var body: some View {
-        List{
-            ForEach(beaconDiscoverer.availableBeacons,id: \.self) { beacon in
-                iBeaconInformationView(beacon: beacon)
-            }
-            ForEach(0...5, id: \.self) { beacon in
-                iBeaconInformationView(beacon: nil)
+        if(beaconDiscoverer.availableBeacons.count > 0){
+            List{
+                ForEach(beaconDiscoverer.availableBeacons,id: \.self) { beacon in
+                    iBeaconInformationView(beacon: beacon)
+                }
             }
         }
-    }
+        else{
+            Text("No iBeacon Found")
+        }
+     }
 }
 
 struct iBeaconListView_Previews: PreviewProvider {
@@ -26,3 +28,7 @@ struct iBeaconListView_Previews: PreviewProvider {
         iBeaconListView()
     }
 }
+//
+//ForEach(0...5, id: \.self) { beacon in
+//    iBeaconInformationView(beacon: nil)
+//}

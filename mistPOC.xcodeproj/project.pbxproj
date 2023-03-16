@@ -427,6 +427,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = mistPOC/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "We want to access bluetooth to provide a personalized experience";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "As a POC I want to access the location previllages";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "As a POC I want to access the location previllages";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -463,6 +464,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = mistPOC/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "We want to access bluetooth to provide a personalized experience";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "As a POC I want to access the location previllages";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "As a POC I want to access the location previllages";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

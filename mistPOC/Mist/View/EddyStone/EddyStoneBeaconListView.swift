@@ -10,14 +10,17 @@ import SwiftUI
 struct EddyStoneBeaconListView: View {
     @ObservedObject var beaconDiscoverer = EddyStoneBeaconDiscoverer()
     var body: some View {
-        List{
-            ForEach(beaconDiscoverer.eddyBeacons, id: \.self) { beacon in
-                EddyStoneBeaconInformationView(beacon: beacon)
-            }
-            ForEach(0...5, id: \.self) { beacon in
-                EddyStoneBeaconInformationView(beacon: nil)
+        if(beaconDiscoverer.eddyBeacons.count > 0){
+            List{
+                ForEach(beaconDiscoverer.eddyBeacons, id: \.self) { beacon in
+                    EddyStoneBeaconInformationView(beacon: beacon)
+                }
             }
         }
+        else{
+            Text("No Eddystone beacons availble")
+        }
+       
     }
 }
 
@@ -26,3 +29,8 @@ struct EddyStoneBeaconListView_Previews: PreviewProvider {
         EddyStoneBeaconListView()
     }
 }
+
+//
+//ForEach(0...5, id: \.self) { beacon in
+//    EddyStoneBeaconInformationView(beacon: nil)
+//}
