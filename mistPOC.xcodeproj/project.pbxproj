@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A2942B329C22F6400CE8605 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2942B229C22F6400CE8605 /* HomeView.swift */; };
+		1A2942B929C2357E00CE8605 /* EddyStoneScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2942B829C2357E00CE8605 /* EddyStoneScanner.swift */; };
 		1A4680ED29B61FB9005029F5 /* mistPOCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4680EC29B61FB9005029F5 /* mistPOCApp.swift */; };
 		1A4680EF29B61FB9005029F5 /* iBeaconListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4680EE29B61FB9005029F5 /* iBeaconListView.swift */; };
 		1A4680F129B61FB9005029F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A4680F029B61FB9005029F5 /* Assets.xcassets */; };
@@ -15,10 +16,15 @@
 		1A46810029B62181005029F5 /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4680FF29B62181005029F5 /* NotificationHandler.swift */; };
 		1AB2CD7429B708470010F30F /* iBeacondiscoverer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB2CD7329B708470010F30F /* iBeacondiscoverer.swift */; };
 		1AB4B5A929C0B3790085D214 /* iBeaconInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB4B5A829C0B3790085D214 /* iBeaconInformationView.swift */; };
+		1AF6A4E329C3025F00AD2B19 /* EddyStoneBeaconListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF6A4E229C3025F00AD2B19 /* EddyStoneBeaconListView.swift */; };
+		1AF6A4E529C3027400AD2B19 /* EddyStoneBeaconInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF6A4E429C3027400AD2B19 /* EddyStoneBeaconInformationView.swift */; };
+		B8D805877DB6EBA46DD8E086 /* Pods_mistPOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC4AE6062104533164A1C32 /* Pods_mistPOC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1A2942B229C22F6400CE8605 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1A2942B729C234D400CE8605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1A2942B829C2357E00CE8605 /* EddyStoneScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EddyStoneScanner.swift; sourceTree = "<group>"; };
 		1A4680E929B61FB9005029F5 /* mistPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mistPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A4680EC29B61FB9005029F5 /* mistPOCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mistPOCApp.swift; sourceTree = "<group>"; };
 		1A4680EE29B61FB9005029F5 /* iBeaconListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBeaconListView.swift; sourceTree = "<group>"; };
@@ -27,6 +33,11 @@
 		1A4680FF29B62181005029F5 /* NotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
 		1AB2CD7329B708470010F30F /* iBeacondiscoverer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBeacondiscoverer.swift; sourceTree = "<group>"; };
 		1AB4B5A829C0B3790085D214 /* iBeaconInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBeaconInformationView.swift; sourceTree = "<group>"; };
+		1AF6A4E229C3025F00AD2B19 /* EddyStoneBeaconListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EddyStoneBeaconListView.swift; sourceTree = "<group>"; };
+		1AF6A4E429C3027400AD2B19 /* EddyStoneBeaconInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EddyStoneBeaconInformationView.swift; sourceTree = "<group>"; };
+		9FCABF03A5B8DA1263B54072 /* Pods-mistPOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mistPOC.release.xcconfig"; path = "Target Support Files/Pods-mistPOC/Pods-mistPOC.release.xcconfig"; sourceTree = "<group>"; };
+		CCC4AE6062104533164A1C32 /* Pods_mistPOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mistPOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5BA570DD762CDA2125852D4 /* Pods-mistPOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mistPOC.debug.xcconfig"; path = "Target Support Files/Pods-mistPOC/Pods-mistPOC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8D805877DB6EBA46DD8E086 /* Pods_mistPOC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +57,8 @@
 			children = (
 				1A4680EB29B61FB9005029F5 /* mistPOC */,
 				1A4680EA29B61FB9005029F5 /* Products */,
+				83B9DC2629F5C5AF2A2E19C9 /* Pods */,
+				649B7E84D6EA957F13C8179A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +73,7 @@
 		1A4680EB29B61FB9005029F5 /* mistPOC */ = {
 			isa = PBXGroup;
 			children = (
+				1A2942B729C234D400CE8605 /* Info.plist */,
 				1A4680FB29B61FD0005029F5 /* Mist */,
 				1A4680FA29B61FBF005029F5 /* Core */,
 				1A4680F229B61FB9005029F5 /* Preview Content */,
@@ -103,8 +118,8 @@
 		1A4680FD29B61FE5005029F5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1A4680EE29B61FB9005029F5 /* iBeaconListView.swift */,
-				1AB4B5A829C0B3790085D214 /* iBeaconInformationView.swift */,
+				1AF6A4E129C3023C00AD2B19 /* EddyStone */,
+				1AF6A4E029C3022B00AD2B19 /* iBeacon */,
 				1A2942B229C22F6400CE8605 /* HomeView.swift */,
 			);
 			path = View;
@@ -115,8 +130,44 @@
 			children = (
 				1A4680FF29B62181005029F5 /* NotificationHandler.swift */,
 				1AB2CD7329B708470010F30F /* iBeacondiscoverer.swift */,
+				1A2942B829C2357E00CE8605 /* EddyStoneScanner.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1AF6A4E029C3022B00AD2B19 /* iBeacon */ = {
+			isa = PBXGroup;
+			children = (
+				1A4680EE29B61FB9005029F5 /* iBeaconListView.swift */,
+				1AB4B5A829C0B3790085D214 /* iBeaconInformationView.swift */,
+			);
+			path = iBeacon;
+			sourceTree = "<group>";
+		};
+		1AF6A4E129C3023C00AD2B19 /* EddyStone */ = {
+			isa = PBXGroup;
+			children = (
+				1AF6A4E229C3025F00AD2B19 /* EddyStoneBeaconListView.swift */,
+				1AF6A4E429C3027400AD2B19 /* EddyStoneBeaconInformationView.swift */,
+			);
+			path = EddyStone;
+			sourceTree = "<group>";
+		};
+		649B7E84D6EA957F13C8179A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCC4AE6062104533164A1C32 /* Pods_mistPOC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83B9DC2629F5C5AF2A2E19C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5BA570DD762CDA2125852D4 /* Pods-mistPOC.debug.xcconfig */,
+				9FCABF03A5B8DA1263B54072 /* Pods-mistPOC.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A4680F729B61FB9005029F5 /* Build configuration list for PBXNativeTarget "mistPOC" */;
 			buildPhases = (
+				B9212F14050316CDC652813F /* [CP] Check Pods Manifest.lock */,
 				1A4680E529B61FB9005029F5 /* Sources */,
 				1A4680E629B61FB9005029F5 /* Frameworks */,
 				1A4680E729B61FB9005029F5 /* Resources */,
+				72A48EF06F6FC8703697D1D8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -184,16 +237,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		72A48EF06F6FC8703697D1D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mistPOC/Pods-mistPOC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mistPOC/Pods-mistPOC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mistPOC/Pods-mistPOC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9212F14050316CDC652813F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mistPOC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1A4680E529B61FB9005029F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A2942B929C2357E00CE8605 /* EddyStoneScanner.swift in Sources */,
 				1A4680EF29B61FB9005029F5 /* iBeaconListView.swift in Sources */,
 				1A46810029B62181005029F5 /* NotificationHandler.swift in Sources */,
 				1A4680ED29B61FB9005029F5 /* mistPOCApp.swift in Sources */,
 				1A2942B329C22F6400CE8605 /* HomeView.swift in Sources */,
 				1AB4B5A929C0B3790085D214 /* iBeaconInformationView.swift in Sources */,
+				1AF6A4E329C3025F00AD2B19 /* EddyStoneBeaconListView.swift in Sources */,
+				1AF6A4E529C3027400AD2B19 /* EddyStoneBeaconInformationView.swift in Sources */,
 				1AB2CD7429B708470010F30F /* iBeacondiscoverer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,6 +415,7 @@
 		};
 		1A4680F829B61FB9005029F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5BA570DD762CDA2125852D4 /* Pods-mistPOC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -327,6 +426,7 @@
 				DEVELOPMENT_TEAM = X8VHD2K5NF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = mistPOC/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "As a POC I want to access the location previllages";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "As a POC I want to access the location previllages";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -351,6 +451,7 @@
 		};
 		1A4680F929B61FB9005029F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FCABF03A5B8DA1263B54072 /* Pods-mistPOC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -361,6 +462,7 @@
 				DEVELOPMENT_TEAM = X8VHD2K5NF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = mistPOC/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "As a POC I want to access the location previllages";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "As a POC I want to access the location previllages";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

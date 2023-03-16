@@ -10,18 +10,14 @@ import SwiftUI
 struct iBeaconListView: View {
     @ObservedObject var beaconDiscoverer = iBeaconDetector()
     var body: some View {
-        VStack{
-            Text("Available iBeacons")
-            List{
-                ForEach(beaconDiscoverer.availableBeacons,id: \.self) { beacon in
-                    iBeaconInformationView(beacon: beacon)
-                }
-                ForEach(0...5,id: \.self) { beacon in
-                    iBeaconInformationView(beacon: nil)
-                }
+        List{
+            ForEach(beaconDiscoverer.availableBeacons,id: \.self) { beacon in
+                iBeaconInformationView(beacon: beacon)
+            }
+            ForEach(0...5, id: \.self) { beacon in
+                iBeaconInformationView(beacon: nil)
             }
         }
-       
     }
 }
 

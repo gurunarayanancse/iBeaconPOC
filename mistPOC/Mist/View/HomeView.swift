@@ -9,14 +9,24 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        VStack(spacing : 15){
-            Button("Scan iBeacons") {
-                print("ibeacon Selected")
-            }.frame(width: 150).padding(5).background(Color.purple)
-            Button("Scan EddyStone ") {
-                print("ibeacon Selected")
-            }.frame(width: 150).padding(5).background(Color.blue)
-        }.foregroundColor(.white)
+        NavigationView {
+            VStack(spacing : 15){
+                
+                // Ibeacon Navigation
+                NavigationLink {
+                    iBeaconListView().navigationTitle("Available iBeacon")
+                } label: {
+                    Text("Scan iBeacons").frame(width: 220).padding(5).background(Color.purple)
+                }
+                
+                // Eddystone Beacon Navigation
+                NavigationLink {
+                    EddyStoneBeaconListView().navigationTitle("Availble Eddystone Beacons")
+                } label: {
+                    Text("Scan EddyStone Beacons").frame(width: 220).padding(5).background(Color.blue)
+                }
+            }.foregroundColor(.white)
+        }
     }
 }
 

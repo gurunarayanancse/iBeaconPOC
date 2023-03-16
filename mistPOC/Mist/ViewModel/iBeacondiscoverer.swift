@@ -8,7 +8,7 @@
 import Foundation
 import CoreLocation
 
-/// Class (ViewModel) to provide a service to detec the beacons as well as to pass to the View
+/// Class (ViewModel) to provide a service to detect the beacons as well as to pass to the View
 ///```
 /// Steps:
 /// 1. Declare the locationManager.
