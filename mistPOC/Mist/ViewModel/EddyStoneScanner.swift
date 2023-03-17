@@ -21,12 +21,20 @@ import EddystoneScanner
 ///```
 
 class EddyStoneBeaconDiscoverer : NSObject,ObservableObject{
+    
+    let bluetoothCentralManager = CBCentralManager()
     ///Scanner - it is the one , will help us to handle EddyBeacons
     let eddystoneScanner = EddystoneScanner.Scanner()
     
     ///Updated and available EddystoneBeacons
     @Published var eddyBeacons : [Beacon] = []
+   
+    /// variable to handle insufficient hardware scenario
+    @Published var insufficientPrevilage : Bool = false
     
+    //variable to handle insufficient previlages
+    @Published var insufficientHardware : Bool = false
+  
     /// Initalizer Use
     /// ```
     /// 1. Assign Delegate to EddyStoneScanner
@@ -37,6 +45,7 @@ class EddyStoneBeaconDiscoverer : NSObject,ObservableObject{
         
         eddystoneScanner.startScanning()
         eddystoneScanner.delegate = self
+        bluetoothCentralManager.delegate = self
     }
 }
 
@@ -69,18 +78,25 @@ extension EddyStoneBeaconDiscoverer : ScannerDelegate{
     /// 1. We are finding the index of the specific beacon
     /// 2. updating the specific beacon depend if it is already available
     /// 3. if the beacon not available on the eddyBeacon Array(our beacon repo), insert it
+    /// 4. Here Main Queue is very important because updation process is happening in background thread by default. and publishing the values should not be through background thread. so enclose statments MainQueue
     /// ```
     func didUpdateBeacon(scanner: EddystoneScanner.Scanner, beacon: EddystoneScanner.Beacon) {
-        let index = eddyBeacons.firstIndex(of: beacon)
-        if let index = index{
-            eddyBeacons[index] = beacon
-        }else{
-            eddyBeacons.append(beacon)
+        DispatchQueue.main.async{
+            let index = self.eddyBeacons.firstIndex(of: beacon)
+            if let index = index{
+                self.eddyBeacons[index] = beacon
+            }else{
+                self.eddyBeacons.append(beacon)
+            }
         }
     }
-    
-    /// will get called once state of the scanner is changed. not need as of now
     func didUpdateScannerState(scanner: EddystoneScanner.Scanner, state: EddystoneScanner.State) {
-        print(state)
+    }
+}
+
+extension EddyStoneBeaconDiscoverer : CBCentralManagerDelegate{
+    func centralManagerDidUpdateState(_ central: CBCentralManager) {
+        self.insufficientHardware = central.state == .unsupported
+        self.insufficientPrevilage = central.state == .unauthorized
     }
 }

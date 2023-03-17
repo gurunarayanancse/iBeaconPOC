@@ -56,7 +56,7 @@
 		440DE076C08CB72CFB18912189C55DF0 /* Pods-mistPOC */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-mistPOC"; path = Pods_mistPOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C2E09B23B0E81AEDEB633B541A3959F /* Beacon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Beacon.swift; path = EddystoneScanner/EddystoneRFC/Models/Beacon.swift; sourceTree = "<group>"; };
 		6413463B39BAF70A0E817BB2B52BF2E3 /* EddystoneScanner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EddystoneScanner-prefix.pch"; sourceTree = "<group>"; };
-		6FA9D67BB3A1EAEF5FADDD9D15892DE5 /* EddystoneScanner */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EddystoneScanner; path = EddystoneScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FA9D67BB3A1EAEF5FADDD9D15892DE5 /* EddystoneScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EddystoneScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FB0DE23615DA373E7D4691C2156C785 /* Pods-mistPOC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-mistPOC-dummy.m"; sourceTree = "<group>"; };
 		7566FCDAC605EB3D2581B3964A2F6ACB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7A33A8168F7F43542ECA93C03170B8A2 /* Pods-mistPOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mistPOC.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 		92550D34358A1C1141E3C79E90CE2212 /* EddystoneScanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EddystoneScanner.modulemap; sourceTree = "<group>"; };
 		98A20ECA7A4BDD92C88181ABE76AF8F4 /* Pods-mistPOC-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-mistPOC-frameworks.sh"; sourceTree = "<group>"; };
 		99E4023520A82EAF89BE8E4F936C4452 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreBluetooth.framework; sourceTree = DEVELOPER_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A3603F02310E5FFFCF40D210C6A87880 /* EddystoneScanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EddystoneScanner-umbrella.h"; sourceTree = "<group>"; };
 		ACA94B07495BC32F22BA1A3F60314FDC /* Pods-mistPOC-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-mistPOC-Info.plist"; sourceTree = "<group>"; };
 		CB405A2344D248F82D879A0E063DF7E4 /* BeaconID.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeaconID.swift; path = EddystoneScanner/EddystoneRFC/Models/BeaconID.swift; sourceTree = "<group>"; };
@@ -143,7 +143,6 @@
 				26457410B9DFB3561696072EEB3340EC /* Util.swift */,
 				5389D31B2A8AC6DB479F6F0A4FB304A6 /* Support Files */,
 			);
-			name = EddystoneScanner;
 			path = EddystoneScanner;
 			sourceTree = "<group>";
 		};
@@ -193,7 +192,7 @@
 		D98B92DF8BBB80BBBD146945104E1251 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6FA9D67BB3A1EAEF5FADDD9D15892DE5 /* EddystoneScanner */,
+				6FA9D67BB3A1EAEF5FADDD9D15892DE5 /* EddystoneScanner.framework */,
 				440DE076C08CB72CFB18912189C55DF0 /* Pods-mistPOC */,
 			);
 			name = Products;
@@ -244,7 +243,7 @@
 			);
 			name = EddystoneScanner;
 			productName = EddystoneScanner;
-			productReference = 6FA9D67BB3A1EAEF5FADDD9D15892DE5 /* EddystoneScanner */;
+			productReference = 6FA9D67BB3A1EAEF5FADDD9D15892DE5 /* EddystoneScanner.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A9DAA4282A6C3C24C3DB28831E07BEEB /* Pods-mistPOC */ = {
@@ -273,7 +272,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1420;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -370,7 +369,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/EddystoneScanner/EddystoneScanner-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/EddystoneScanner/EddystoneScanner-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,6 +461,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -542,7 +542,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/EddystoneScanner/EddystoneScanner-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/EddystoneScanner/EddystoneScanner-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -597,6 +597,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
