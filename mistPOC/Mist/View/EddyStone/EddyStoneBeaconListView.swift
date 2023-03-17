@@ -10,15 +10,23 @@ import SwiftUI
 struct EddyStoneBeaconListView: View {
     @ObservedObject var beaconDiscoverer = EddyStoneBeaconDiscoverer()
     var body: some View {
-        if(beaconDiscoverer.eddyBeacons.count > 0){
-            List{
-                ForEach(beaconDiscoverer.eddyBeacons, id: \.self) { beacon in
-                    EddyStoneBeaconInformationView(beacon: beacon)
-                }
-            }
+        if(beaconDiscoverer.insufficientHardware){
+            Text("No Suitable Hardware found")
+        }
+       else if(beaconDiscoverer.insufficientPrevilage){
+            SettingsNavigator(title: "Bluetooth Permission not given.")
         }
         else{
-            Text("No Eddystone beacons availble")
+            if(beaconDiscoverer.eddyBeacons.count > 0){
+                List{
+                    ForEach(beaconDiscoverer.eddyBeacons, id: \.self) { beacon in
+                        EddyStoneBeaconInformationView(beacon: beacon)
+                    }
+                }
+            }
+            else{
+                Text("No Eddystone beacons availble")
+            }
         }
        
     }

@@ -18,6 +18,7 @@
 		1AB4B5A929C0B3790085D214 /* iBeaconInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB4B5A829C0B3790085D214 /* iBeaconInformationView.swift */; };
 		1AF6A4E329C3025F00AD2B19 /* EddyStoneBeaconListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF6A4E229C3025F00AD2B19 /* EddyStoneBeaconListView.swift */; };
 		1AF6A4E529C3027400AD2B19 /* EddyStoneBeaconInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF6A4E429C3027400AD2B19 /* EddyStoneBeaconInformationView.swift */; };
+		1AF6A4E729C465BC00AD2B19 /* SettingsNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF6A4E629C465BC00AD2B19 /* SettingsNavigator.swift */; };
 		B8D805877DB6EBA46DD8E086 /* Pods_mistPOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC4AE6062104533164A1C32 /* Pods_mistPOC.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		1AB4B5A829C0B3790085D214 /* iBeaconInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBeaconInformationView.swift; sourceTree = "<group>"; };
 		1AF6A4E229C3025F00AD2B19 /* EddyStoneBeaconListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EddyStoneBeaconListView.swift; sourceTree = "<group>"; };
 		1AF6A4E429C3027400AD2B19 /* EddyStoneBeaconInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EddyStoneBeaconInformationView.swift; sourceTree = "<group>"; };
+		1AF6A4E629C465BC00AD2B19 /* SettingsNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsNavigator.swift; sourceTree = "<group>"; };
 		9FCABF03A5B8DA1263B54072 /* Pods-mistPOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mistPOC.release.xcconfig"; path = "Target Support Files/Pods-mistPOC/Pods-mistPOC.release.xcconfig"; sourceTree = "<group>"; };
 		CCC4AE6062104533164A1C32 /* Pods_mistPOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mistPOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5BA570DD762CDA2125852D4 /* Pods-mistPOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mistPOC.debug.xcconfig"; path = "Target Support Files/Pods-mistPOC/Pods-mistPOC.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		1A4680FD29B61FE5005029F5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1AF6A4E829C46AB700AD2B19 /* Support Views */,
 				1AF6A4E129C3023C00AD2B19 /* EddyStone */,
 				1AF6A4E029C3022B00AD2B19 /* iBeacon */,
 				1A2942B229C22F6400CE8605 /* HomeView.swift */,
@@ -151,6 +154,14 @@
 				1AF6A4E429C3027400AD2B19 /* EddyStoneBeaconInformationView.swift */,
 			);
 			path = EddyStone;
+			sourceTree = "<group>";
+		};
+		1AF6A4E829C46AB700AD2B19 /* Support Views */ = {
+			isa = PBXGroup;
+			children = (
+				1AF6A4E629C465BC00AD2B19 /* SettingsNavigator.swift */,
+			);
+			path = "Support Views";
 			sourceTree = "<group>";
 		};
 		649B7E84D6EA957F13C8179A /* Frameworks */ = {
@@ -288,6 +299,7 @@
 				1A4680EF29B61FB9005029F5 /* iBeaconListView.swift in Sources */,
 				1A46810029B62181005029F5 /* NotificationHandler.swift in Sources */,
 				1A4680ED29B61FB9005029F5 /* mistPOCApp.swift in Sources */,
+				1AF6A4E729C465BC00AD2B19 /* SettingsNavigator.swift in Sources */,
 				1A2942B329C22F6400CE8605 /* HomeView.swift in Sources */,
 				1AB4B5A929C0B3790085D214 /* iBeaconInformationView.swift in Sources */,
 				1AF6A4E329C3025F00AD2B19 /* EddyStoneBeaconListView.swift in Sources */,

@@ -29,6 +29,12 @@ class iBeaconDetector : NSObject, CLLocationManagerDelegate,ObservableObject{
     /// 1. class where the beacon info gets stored.
     @Published var availableBeacons : [CLBeacon] = []
     
+    /// variable to handle insufficient hardware scenario
+    @Published var insufficientHardware : Bool = false
+    
+    //variable to handle insufficient previlages
+    @Published var insufficientPrevilage : Bool = false
+    
     /// 1.initalizer will ask for authorization and assigns a deligation.
     override init() {
         super.init()
@@ -61,20 +67,21 @@ class iBeaconDetector : NSObject, CLLocationManagerDelegate,ObservableObject{
     ///```
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         if(locationManager.authorizationStatus == .authorizedWhenInUse || locationManager.authorizationStatus == .authorizedAlways){
+            insufficientPrevilage = false
             if(CLLocationManager.isMonitoringAvailable(for: CLBeaconRegion.self)){
                 if CLLocationManager.isRangingAvailable() {
                     startScanning()
                 }
                 else{
-                    print("Ranging not available")
+                    insufficientHardware = true
                 }
             }
             else{
-                print("Monitoring not available")
+                insufficientHardware = true
             }
         }
         else{
-            print("Permission not granted")
+            insufficientPrevilage = true
         }
     }
     

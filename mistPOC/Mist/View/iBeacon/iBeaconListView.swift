@@ -10,15 +10,23 @@ import SwiftUI
 struct iBeaconListView: View {
     @ObservedObject var beaconDiscoverer = iBeaconDetector()
     var body: some View {
-        if(beaconDiscoverer.availableBeacons.count > 0){
-            List{
-                ForEach(beaconDiscoverer.availableBeacons,id: \.self) { beacon in
-                    iBeaconInformationView(beacon: beacon)
-                }
-            }
+        if(beaconDiscoverer.insufficientHardware){
+            Text("No Suitable Hardware found")
+        }
+        else if(beaconDiscoverer.insufficientPrevilage){
+            SettingsNavigator(title: "Location permission is not granted")
         }
         else{
-            Text("No iBeacon Found")
+            if(beaconDiscoverer.availableBeacons.count > 0){
+                List{
+                    ForEach(beaconDiscoverer.availableBeacons,id: \.self) { beacon in
+                        iBeaconInformationView(beacon: beacon)
+                    }
+                }
+            }
+            else{
+                Text("No iBeacon Found")
+            }
         }
      }
 }
