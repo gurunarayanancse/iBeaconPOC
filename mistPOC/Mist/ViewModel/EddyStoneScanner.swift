@@ -47,6 +47,9 @@ class EddyStoneBeaconDiscoverer : NSObject,ObservableObject{
         eddystoneScanner.delegate = self
         bluetoothCentralManager.delegate = self
     }
+    deinit{
+        eddystoneScanner.stopScanning()
+    }
 }
 
 

@@ -42,6 +42,9 @@ class iBeaconDetector : NSObject, CLLocationManagerDelegate,ObservableObject{
         locationManager.delegate = self
     }
     
+    deinit{
+        stopScanning()
+    }
     /// Initiate the scanning process.
     /// ```
     /// Steps:
@@ -55,6 +58,21 @@ class iBeaconDetector : NSObject, CLLocationManagerDelegate,ObservableObject{
         let beaconRegion = CLBeaconRegion(beaconIdentityConstraint: constraint, identifier: "com.beacon.myroom")
         locationManager.startMonitoring(for: beaconRegion)
         locationManager.startRangingBeacons(satisfying: constraint)
+    }
+    
+    /// stops the scanning process.
+    /// ```
+    /// Steps:
+    /// 1. Define constraint.
+    /// 2. Define Beacon region to scan.
+    /// 3. stop ranging beacons.
+    ///```
+    func stopScanning(){
+        guard let uuid = UUID(uuidString: "B0702880-A295-A8AB-F734-031A98A512DE") else { return }
+        let constraint = CLBeaconIdentityConstraint(uuid: uuid)
+        let beaconRegion = CLBeaconRegion(beaconIdentityConstraint: constraint, identifier: "com.beacon.myroom")
+        locationManager.stopMonitoring(for: beaconRegion)
+        locationManager.stopRangingBeacons(satisfying: constraint)
     }
     
     /// Checks auth status of location manager.
