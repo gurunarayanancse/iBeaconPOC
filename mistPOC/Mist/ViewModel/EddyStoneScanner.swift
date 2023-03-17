@@ -67,10 +67,12 @@ extension EddyStoneBeaconDiscoverer : ScannerDelegate{
     /// 2. Removing that beacon from our eddyBeacon array(aka EddyBeacons repo)
     /// ```
     func didLoseBeacon(scanner: EddystoneScanner.Scanner, beacon: EddystoneScanner.Beacon) {
-        let index = eddyBeacons.firstIndex(of: beacon)
-        if let index = index{
-            eddyBeacons.remove(at: index)
-        }else{return}
+        DispatchQueue.main.async {
+            let index = self.eddyBeacons.firstIndex(of: beacon)
+            if let index = index{
+                self.eddyBeacons.remove(at: index)
+            }else{return}
+        }
     }
     
     // Will get Called once a beacon is modified - (like signal strength and proximity).
