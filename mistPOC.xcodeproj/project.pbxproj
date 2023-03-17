@@ -120,10 +120,10 @@
 		1A4680FD29B61FE5005029F5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1AF6A4E829C46AB700AD2B19 /* Support Views */,
 				1AF6A4E129C3023C00AD2B19 /* EddyStone */,
 				1AF6A4E029C3022B00AD2B19 /* iBeacon */,
 				1A2942B229C22F6400CE8605 /* HomeView.swift */,
-				1AF6A4E629C465BC00AD2B19 /* SettingsNavigator.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -154,6 +154,14 @@
 				1AF6A4E429C3027400AD2B19 /* EddyStoneBeaconInformationView.swift */,
 			);
 			path = EddyStone;
+			sourceTree = "<group>";
+		};
+		1AF6A4E829C46AB700AD2B19 /* Support Views */ = {
+			isa = PBXGroup;
+			children = (
+				1AF6A4E629C465BC00AD2B19 /* SettingsNavigator.swift */,
+			);
+			path = "Support Views";
 			sourceTree = "<group>";
 		};
 		649B7E84D6EA957F13C8179A /* Frameworks */ = {
